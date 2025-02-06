@@ -1,0 +1,30 @@
+.wrapper {
+    background-color: rgba(173, 216, 230, 0.6509803922);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    margin: 4rem auto;
+  }
+  .wrapper .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .wrapper .container input {
+    width: 80%;
+    height: 2rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    font-family: "Micro 5", sans-serif;
+    font-size: 1.7rem;
+  }
+  .wrapper .container button {
+    width: 100px;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+    font-family: "Micro 5", sans-serif;
+    font-size: 1.7rem;
+    background-color: #298694;
+    color: #c0b8a6;
+  }

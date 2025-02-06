@@ -5,9 +5,7 @@ import PokemonStats from "./components/PokemonStats";
 function App() {
   return (
     <>
-      <div>App</div>
       <SearchForm />
-      
     </>
   );
 }

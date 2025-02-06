@@ -1,6 +1,7 @@
 import PokemonContext from "../contexts/PokemonContext";
 import { useContext, useState } from "react";
 import PokemonStats from "./PokemonStats";
+import "./SearchForm.css"
 
 function SearchForm() {
   const { pokemon, setPokemon } = useContext(PokemonContext);
@@ -12,19 +13,22 @@ function SearchForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setPokemon(inputValue)
-  }
+    setPokemon(inputValue);
+  };
 
   return (
     <>
-      <div>Search</div>
-      <form onSubmit = {handleSubmit}>
-        <label htmlFor="text">
-          <input onChange={handleChange}></input>
-        </label>
-        <button>Search</button>
-      </form>
-      {pokemon && <PokemonStats />}
+      <div className="wrapper">
+        <div className="container">
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="text">
+              <input onChange={handleChange}></input>
+            </label>
+            <button>Search</button>
+          </form>
+          {pokemon && <PokemonStats />}
+        </div>
+      </div>
     </>
   );
 }
