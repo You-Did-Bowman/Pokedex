@@ -18,14 +18,26 @@ function PokemonStats() {
     return <p>... Loading</p>;
   } else {
     console.log(searchPoke);
-    
   }
   return (
     <>
-      <div>Pokemon Stats</div>
-      <p>{searchPoke.name}</p>
-      <p>{searchPoke.height}</p>
-
+      <h2>{searchPoke.name.toUpperCase()}</h2>
+      <img src={searchPoke.sprites.front_default} />
+      <h3>stats</h3>
+      <ul>
+        {searchPoke.stats.map((el) => (
+          <div>
+            <li key={el.stat.name}>{el.stat.name}</li>
+            <li key={el.base_stat}>{el.base_stat}</li>
+          </div>
+        ))}
+      </ul>
+      <h3>abilities</h3>
+      <ul>
+        {searchPoke.abilities.map((el) => (
+          <li key={el.ability.name}>{el.ability.name}</li>
+        ))}
+      </ul>
     </>
   );
 }
