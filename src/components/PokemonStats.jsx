@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import PokemonContext from "../contexts/PokemonContext";
+import "./PokemonStats.css";
 
 function PokemonStats() {
   const [searchPoke, setSearchPoke] = useState(null);
@@ -21,23 +22,25 @@ function PokemonStats() {
   }
   return (
     <>
-      <h2>{searchPoke.name.toUpperCase()}</h2>
-      <img src={searchPoke.sprites.front_default} />
-      <h3>stats</h3>
-      <ul>
-        {searchPoke.stats.map((el) => (
-          <div>
-            <li key={el.stat.name}>{el.stat.name}</li>
-            <li key={el.base_stat}>{el.base_stat}</li>
-          </div>
-        ))}
-      </ul>
-      <h3>abilities</h3>
-      <ul>
-        {searchPoke.abilities.map((el) => (
-          <li key={el.ability.name}>{el.ability.name}</li>
-        ))}
-      </ul>
+      <div className="card">
+        <h2>{searchPoke.name.toUpperCase()}</h2>
+        <img src={searchPoke.sprites.front_default} />
+        <h3>stats</h3>
+        <ul className = "stats">
+          {searchPoke.stats.map((el) => (
+            <div className = "abilities">
+              <li key={el.stat.name}>{el.stat.name}</li>
+              <li key={el.base_stat}>{el.base_stat}</li>
+            </div>
+          ))}
+        </ul>
+        <h3>abilities</h3>
+        <ul className = "abilities">
+          {searchPoke.abilities.map((el) => (
+            <li key={el.ability.name}>{el.ability.name}</li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 }
