@@ -1,0 +1,86 @@
+.notFound {
+    height: 80vh;
+    
+    h1, p {
+        text-align: center;
+    }
+}
+
+.ghastly-img {
+  width: 200px;
+  animation: 30s ghost infinite;
+}
+
+@keyframes ghost {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  5%,
+  15%,
+  25%,
+  35%,
+  45%,
+  55%,
+  65%,
+  75%,
+  85%,
+  95% {
+    scale: 100%;
+    opacity: 0;
+  }
+
+  10% {
+    scale: 150%;
+    transform: translate(80px, 80px)
+  }
+
+
+  20% {
+    scale: 150%;
+    opacity: 1;
+    transform: translate(120px)
+  }
+  30% {
+    scale: 150%;
+    opacity: 1;
+    transform: translate(0px, 200px)
+  }
+
+  40% {
+    scale: 150%;
+    opacity: 1;
+    transform: translate(250px, 150px);
+  }
+
+  50% {
+    scale: 150%;
+    opacity: 1;
+    transform: translate(150px, 50px);
+  }
+
+  60% {
+    scale: 150%;
+    opacity: 1;
+    transform: translate(300px, 150px);
+  }
+
+  70% {
+    scale: 150%;
+    opacity: 1;
+    transform: translate(325px, 20px)
+  }
+
+  80% {
+    scale: 150%;
+    opacity: 1;
+    transform: translate(300px, 150px)
+  }
+
+  90% {
+    scale: 150%;
+    opacity: 1;
+    transform: translate(150px, 20px)
+  }
+}
