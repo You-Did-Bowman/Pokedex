@@ -28,12 +28,13 @@
   85%,
   95% {
     scale: 100%;
-    opacity: 0;
+   opacity: 0;
   }
 
   10% {
     scale: 150%;
-    transform: translate(80px, 80px)
+    transform: translate(80px, 80px);
+    opacity: 1;
   }
 
 
