@@ -28,7 +28,7 @@ function PokemonStats() {
         <h3>stats</h3>
         <ul className = "stats">
           {searchPoke.stats.map((el) => (
-            <div className = "abilities">
+            <div>
               <li key={el.stat.name}>{el.stat.name}</li>
               <li key={el.base_stat}>{el.base_stat}</li>
             </div>

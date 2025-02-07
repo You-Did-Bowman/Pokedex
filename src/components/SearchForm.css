@@ -1,17 +1,17 @@
 .wrapper {
   background-color: #add8e6a6;
+  position: absolute;
+  right: 5rem;
   padding: 2rem;
   border-radius: 10px;
-  width: 80%;
-  margin: 4rem auto;
+  width: 40%;
+  min-width: 400px;
 
   .container form {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    padding-left: 2.5rem;
 
     input {
-      width: 80%;
+      width: 70%;
       height: 2rem;
       border-radius: 10px;
       padding-left: 1rem;
@@ -28,6 +28,12 @@
       font-size: 1.7rem;
       background-color: #298694;
       color: #c0b8a6;
+      margin-left: 2rem;
+    }
+
+    button:hover {
+      color: #298694;
+      background-color: #C0B8A6;
     }
   }
 }

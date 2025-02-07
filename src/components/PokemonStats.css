@@ -1,19 +1,26 @@
 .card {
     text-align: center;
     padding: 2rem;
-    opacity: 0;
 
-    img {
+     img {
       width: 200px;
       border: 15px solid white;
       box-shadow: inset 0 0 10px #154a52;
       border-radius: 120px;
       background-color: #2986949a;
-    }
+    } 
+
     .stats, .abilities {
         background-color: #2986949a;
         padding: .5rem;
         border-radius: 10px;
+    }
+
+    .stats div{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 2rem;
+
     }
 
     h3 {
