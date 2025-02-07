@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import PokemonStats from "./PokemonStats";
 import "./SearchForm.css"
 
+
 function SearchForm() {
   const { pokemon, setPokemon } = useContext(PokemonContext);
   const [inputValue, setInputValue] = useState("");

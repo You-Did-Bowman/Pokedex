@@ -1,24 +1,39 @@
 import { useContext, useEffect, useState } from "react";
 import PokemonContext from "../contexts/PokemonContext";
 import "./PokemonStats.css";
+import NotFound from "./NotFound";
 
 function PokemonStats() {
-  const [searchPoke, setSearchPoke] = useState(null);
-  const { pokemon } = useContext(PokemonContext);
+  const { pokemon, searchPoke, setSearchPoke } = useContext(PokemonContext);
+  const [error, setError] = useState(null)
 
   useEffect(() => {
     if (pokemon) {
       fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`)
-        .then((res) => res.json())
-        .then((data) => setSearchPoke(data))
-        .catch((error) => console.log(error));
+        .then((res) => {
+          if (!res.ok) {
+            throw new Error('Pokemon not found');
+          }
+          return res.json();
+        })
+        .then((data) => {
+          setSearchPoke(data);
+          setError(null);
+        })
+        .catch((error) => {
+          console.log(error);
+          setError(error.message);
+          setSearchPoke(null);
+        });
     }
-  }, [pokemon]);
+  }, [pokemon, setSearchPoke]);
+
+  if (error) {
+    return <NotFound />;
+  }
 
   if (!searchPoke) {
     return <p>... Loading</p>;
-  } else {
-    console.log(searchPoke);
   }
   return (
     <>
