@@ -1,44 +1,45 @@
-# RGB_Guessing_Game
+# Pokedex
 
 ## About The Project
-This game is designed to help you test and improve your knowledge of RGB colour codes. 
+This page intercepts the PokeApi and uses the data it receives to display in a ‘Pokedex’. 
 <br><br>
-The rules consist of finding the right colour by only being told the RGB colour code.
-If you guess wrong, the selected tile disappears. However, if you have guessed correctly, all remaining tiles take on the colour you have chosen. 
-There are two difficulty level to choose from. 
-
-### Difficulty-Level:
-#### EASY
-In the ‘EASY’ difficulty mode, you have to find the colour you are looking for from 3 sample colours.
-
-#### HARD
-If you select ‘HARD’ as the difficulty level, you have to find the colour you are looking for among six differently coloured tiles. 
-
-### New Color
-If you want a new colour or have not found the right colour, you can use ‘NEW COLOR’ to display a new code and new tiles. 
+The english name of one of the more than 1000 Pokemon can be entered in the input field. If you press Enter or the ‘Search’ button, a picture, the stats and the abilities of the Pokemon are displayed.
+<br><br>
+If the Pokemon cannot be found - because it does not exist or a spelling mistake has been made - a NotFound page will appear with a Ghastly, which will randomly appear on the page and disappear again. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Roadmap:
+The project is written using React.js. This library enabled me to create the Input, Pokemon and NotFound page in separate components and to design the page in an agile way. The context is used to keep the state of the pokemon up to date throughout the application.
+<br><br>
+The Pokedex has a media querie for mobil screens.  
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
-This game consists of Javascript, HTML and CSS. 
+This app is build with react.js, Vite, CSS and HTML. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Screenshots
-![Screenshot1](/assets/Screenshot_RGB_EASY.png) 
-Easy - Mode
+<img src="./src/assets/Pokedex_Landingpage.png" alt="Screenshot1" width="600px" />
+<br>
+Landingpage
 <br>
 <br>
-![Screenshot2](/assets/Screenshot_RGB_HARD.png) 
-Hard - Mode
+<img src="./src/assets/Pokedex_Search-Pokemon.png" alt="Screenshot1" width="600px" />
+<br>
+Search a Pokemon
 <br>
 <br>
-![Screenshot3](/assets/Screenshot_RGB_finished.png) 
+<img src="./src/assets/Pokedex_NotFound.png" alt="Screenshot1" width="600px" />
 <br>
-Solved Game
+Not Found
 <br>
 <br>
+<img src="./src/assets/Pokedex_Mobile.png" alt="Screenshot1" height="600px" /> 
+<br>
+Mobile Version
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -58,6 +59,8 @@ Judith Bohmann
 <br><br>
 Mail: ju.bohmann@gmx.de
 <br><br>
-Repo-Link: <a href="https://github.com/You-Did-Bowman/RGB_Guessing_Game">github.com/You-Did-Bowman/RGB_Guessing_Game</a>
+Repo-Link: <a href="https://github.com/You-Did-Bowman/Pokedex">github.com/You-Did-Bowman/Pokedex</a>
+<br><br>
+Homepage: <a href="https://pokedex-dlii.onrender.com/">pokedex-dlii.onrender.com/</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
