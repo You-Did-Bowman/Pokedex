@@ -3,21 +3,22 @@
   position: absolute;
   right: 5rem;
   padding: 2rem;
+  margin: 1rem auto;
   border-radius: 10px;
   width: 40%;
-  min-width: 400px;
+  min-width: 200px;
 
   .container form {
-    border: 2px solid green;
-    padding-left: 2.5rem;
+    display: grid;
+    justify-content: center;
+    gap: 0.5rem;
 
     input {
-      width: 70%;
       height: 2rem;
       border-radius: 10px;
       padding-left: 1rem;
       font-family: "Micro 5", sans-serif;
-      font-size: 1.7rem;
+      font-size: 1rem;
     }
 
     button {
@@ -26,15 +27,29 @@
       border: none;
       border-radius: 10px;
       font-family: "Micro 5", sans-serif;
-      font-size: 1.7rem;
+      font-size: 1.2rem;
       background-color: #298694;
       color: #c0b8a6;
-      margin-left: 2rem;
+      margin: 0 auto;
     }
 
     button:hover {
       color: #298694;
       background-color: #c0b8a6;
+    }
+  }
+}
+
+@media screen and (min-width: 625px) {
+  .wrapper .container {
+    form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      input, button {
+        font-size: 1.5rem;
+      }
     }
   }
 }
