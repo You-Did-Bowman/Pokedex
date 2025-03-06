@@ -6,6 +6,8 @@ This page intercepts the PokeApi and uses the data it receives to display in a �
 The english name of one of the more than 1000 Pokemon can be entered in the input field. If you press Enter or the ‘Search’ button, a picture, the stats and the abilities of the Pokemon are displayed.
 <br><br>
 If the Pokemon cannot be found - because it does not exist or a spelling mistake has been made - a NotFound page will appear with a Ghastly, which will randomly appear on the page and disappear again. 
+<br><br>
+<a href="https://pokedex-dlii.onrender.com/">Viste the Pokedex on Render.com</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
