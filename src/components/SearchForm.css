@@ -8,6 +8,7 @@
   min-width: 400px;
 
   .container form {
+    border: 2px solid green;
     padding-left: 2.5rem;
 
     input {
@@ -33,7 +34,7 @@
 
     button:hover {
       color: #298694;
-      background-color: #C0B8A6;
+      background-color: #c0b8a6;
     }
   }
 }
