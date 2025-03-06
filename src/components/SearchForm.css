@@ -1,7 +1,5 @@
 .wrapper {
   background-color: #add8e6a6;
-  position: absolute;
-  right: 5rem;
   padding: 2rem;
   margin: 1rem auto;
   border-radius: 10px;
@@ -40,14 +38,26 @@
   }
 }
 
+@media screen and (min-width: 730px) {
+  .wrapper {
+    position: absolute;
+    right: 5rem;
+
+    .container form button {
+      margin: 0;
+    }
+  }
+}
+
 @media screen and (min-width: 625px) {
   .wrapper .container {
     form {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
 
-      input, button {
+      input,
+      button {
         font-size: 1.5rem;
       }
     }
